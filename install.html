@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Install RIFT Programming Language - Quick and easy installation for macOS, Linux, and Windows via WSL">
+    <meta name="keywords" content="RIFT, install, installation, setup, macOS, Linux, Windows, WSL">
+    <title>Install RIFT - Quick Setup Guide</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/" class="logo">RIFT</a>
+            
+            <nav class="nav-main">
+                <a href="/why-rift.html">Why RIFT</a>
+                <a href="/docs-lite.html">Docs</a>
+                <a href="/compare.html">Compare</a>
+                <a href="/install.html" class="active">Install</a>
+                <a href="/showcase.html">Showcase</a>
+                <a href="/community.html">Community</a>
+                <a href="/performance.html">Performance</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="/install.html" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="container">
+            <div class="hero">
+                <h1 class="hero-title reveal">Install RIFT</h1>
+                <p class="hero-subtitle reveal">
+                    Get up and running in under 60 seconds. RIFT works on macOS, Linux, and Windows via WSL.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Install Section -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">One-Line Installation</h2>
+                <p class="text-secondary reveal">Enterprise-grade installer for all platforms</p>
+            </div>
+
+            <!-- Platform Tabs -->
+            <div class="tabs-container reveal">
+                <div class="tabs">
+                    <ul class="tab-list" style="justify-content: center;">
+                        <li><button class="tab-button active" data-tab-target="tab-macos">macOS</button></li>
+                        <li><button class="tab-button" data-tab-target="tab-linux">Linux</button></li>
+                        <li><button class="tab-button" data-tab-target="tab-windows">Windows (WSL)</button></li>
+                    </ul>
+                </div>
+
+                <!-- macOS Tab -->
+                <div id="tab-macos" class="tab-panel active">
+                    <div class="card">
+                        <h3 class="mb-md">Install on macOS</h3>
+                        <p class="text-secondary mb-lg">
+                            RIFT supports all modern macOS versions (10.15+) on both Intel and Apple Silicon.
+                        </p>
+                        
+                        <div class="terminal" data-install-demo="macos">
+                            <div class="terminal-header">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">$ </span>
+                                    <span class="terminal-command typed-text" data-text="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh"></span>
+                                </div>
+                                <div class="terminal-output" style="display: none;">
+                                    <div class="terminal-line text-secondary">→ Detecting system architecture...</div>
+                                    <div class="terminal-line text-success">✓ macOS arm64 detected</div>
+                                    <div class="terminal-line text-secondary">→ Downloading RIFT v1.0.0...</div>
+                                    <div class="terminal-line text-success">✓ Downloaded successfully</div>
+                                    <div class="terminal-line text-secondary">→ Installing to /usr/local/bin...</div>
+                                    <div class="terminal-line text-success">✓ RIFT installed successfully!</div>
+                                    <div class="terminal-line mt-sm">Run <span class="text-accent">rift --version</span> to verify installation</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-md">
+                            <button class="btn btn-primary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh">
+                                📋 Copy Install Command
+                            </button>
+                            <button class="btn btn-secondary ml-sm demo-trigger" data-demo-target="macos">
+                                ▶ Run Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linux Tab -->
+                <div id="tab-linux" class="tab-panel">
+                    <div class="card">
+                        <h3 class="mb-md">Install on Linux</h3>
+                        <p class="text-secondary mb-lg">
+                            Compatible with all major Linux distributions: Ubuntu, Debian, Fedora, Arch, and more.
+                        </p>
+                        
+                        <div class="terminal" data-install-demo="linux">
+                            <div class="terminal-header">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">$ </span>
+                                    <span class="terminal-command typed-text" data-text="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh"></span>
+                                </div>
+                                <div class="terminal-output" style="display: none;">
+                                    <div class="terminal-line text-secondary">→ Detecting system architecture...</div>
+                                    <div class="terminal-line text-success">✓ Linux x86_64 detected</div>
+                                    <div class="terminal-line text-secondary">→ Downloading RIFT v1.0.0...</div>
+                                    <div class="terminal-line text-success">✓ Downloaded successfully</div>
+                                    <div class="terminal-line text-secondary">→ Installing to /usr/local/bin...</div>
+                                    <div class="terminal-line text-success">✓ RIFT installed successfully!</div>
+                                    <div class="terminal-line mt-sm">Run <span class="text-accent">rift --version</span> to verify installation</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-md">
+                            <button class="btn btn-primary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh">
+                                📋 Copy Install Command
+                            </button>
+                            <button class="btn btn-secondary ml-sm demo-trigger" data-demo-target="linux">
+                                ▶ Run Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows WSL Tab -->
+                <div id="tab-windows" class="tab-panel">
+                    <div class="card">
+                        <h3 class="mb-md">Install on Windows via WSL</h3>
+                        <p class="text-secondary mb-lg">
+                            RIFT runs on Windows through Windows Subsystem for Linux (WSL 2). 
+                            You'll need WSL installed first - <a href="https://learn.microsoft.com/en-us/windows/wsl/install" class="text-accent" target="_blank">Learn how to install WSL</a>.
+                        </p>
+                        
+                        <div class="card bg-tertiary mb-lg">
+                            <h4 class="mb-sm">Prerequisites</h4>
+                            <p class="text-secondary text-sm mb-md">Install WSL 2 if you haven't already:</p>
+                            <div class="terminal" style="margin-bottom: 1rem;">
+                                <div class="terminal-body">
+                                    <div class="terminal-line">
+                                        <span class="terminal-prompt">&gt; </span>
+                                        <span class="terminal-command">wsl --install</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-secondary" data-copy="wsl --install">
+                                📋 Copy WSL Install Command
+                            </button>
+                        </div>
+
+                        <p class="text-secondary mb-md">Once WSL is set up, open your WSL terminal and run:</p>
+                        
+                        <div class="terminal" data-install-demo="wsl">
+                            <div class="terminal-header">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">$ </span>
+                                    <span class="terminal-command typed-text" data-text="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh"></span>
+                                </div>
+                                <div class="terminal-output" style="display: none;">
+                                    <div class="terminal-line text-secondary">→ Detecting system architecture...</div>
+                                    <div class="terminal-line text-success">✓ WSL2 (Ubuntu) x86_64 detected</div>
+                                    <div class="terminal-line text-secondary">→ Downloading RIFT v1.0.0...</div>
+                                    <div class="terminal-line text-success">✓ Downloaded successfully</div>
+                                    <div class="terminal-line text-secondary">→ Installing to /usr/local/bin...</div>
+                                    <div class="terminal-line text-success">✓ RIFT installed successfully!</div>
+                                    <div class="terminal-line mt-sm">Run <span class="text-accent">rift --version</span> to verify installation</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-md">
+                            <button class="btn btn-primary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh">
+                                📋 Copy Install Command
+                            </button>
+                            <button class="btn btn-secondary ml-sm demo-trigger" data-demo-target="wsl">
+                                ▶ Run Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post-Installation Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Verify Your Installation</h2>
+                <p class="text-secondary reveal">Make sure RIFT is ready to use</p>
+            </div>
+
+            <div class="grid grid-2 gap-xl">
+                <div class="reveal-left">
+                    <div class="card">
+                        <h3 class="mb-md">1. Check Version</h3>
+                        <p class="text-secondary mb-md">Verify RIFT is installed correctly:</p>
+                        
+                        <div class="terminal" data-verification-demo="version">
+                            <div class="terminal-header">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">$ </span>
+                                    <span class="terminal-command typed-text" data-text="rift --version"></span>
+                                </div>
+                                <div class="terminal-output" style="display: none;">
+                                    <div class="terminal-line text-success">RIFT v1.0.0</div>
+                                    <div class="terminal-line text-secondary">Rapid Integrated Framework Technology</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-md">
+                            <button class="btn btn-sm btn-secondary" data-copy="rift --version">
+                                📋 Copy Command
+                            </button>
+                            <button class="btn btn-sm btn-secondary ml-sm demo-trigger" data-demo-target="version">
+                                ▶ Run Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-right">
+                    <div class="card">
+                        <h3 class="mb-md">2. Run Your First Program</h3>
+                        <p class="text-secondary mb-md">Create and run a simple RIFT program:</p>
+                        
+                        <div class="terminal" data-verification-demo="hello">
+                            <div class="terminal-header">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">$ </span>
+                                    <span class="terminal-command typed-text" data-text='echo &#39;print("Hello from RIFT!")&#39; > hello.rift'></span>
+                                </div>
+                                <div class="terminal-output step-1" style="display: none;">
+                                    <div class="terminal-line">
+                                        <span class="terminal-prompt">$ </span>
+                                        <span class="terminal-command typed-text" data-text="rift hello.rift"></span>
+                                    </div>
+                                </div>
+                                <div class="terminal-output step-2" style="display: none;">
+                                    <div class="terminal-line text-success">Hello from RIFT!</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-md">
+                            <button class="btn btn-sm btn-secondary" data-copy='echo &#39;print("Hello from RIFT!")&#39; > hello.rift && rift hello.rift'>
+                                📋 Copy Command
+                            </button>
+                            <button class="btn btn-sm btn-secondary ml-sm demo-trigger" data-demo-target="hello">
+                                ▶ Run Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-xl reveal">
+                <p class="text-secondary mb-md">✓ Installation successful! Ready to explore RIFT?</p>
+                <a href="/docs-lite.html" class="btn btn-primary">Start Learning →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uninstall Section -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Uninstalling RIFT</h2>
+                <p class="text-secondary reveal">Clean removal when needed</p>
+            </div>
+
+            <div class="card reveal" style="max-width: 800px; margin: 0 auto;">
+                <h3 class="mb-md">Complete Uninstallation</h3>
+                <p class="text-secondary mb-lg">
+                    If you need to remove RIFT from your system, our uninstall script will cleanly remove 
+                    all RIFT files and configurations.
+                </p>
+                
+                <div class="terminal" data-uninstall-demo>
+                    <div class="terminal-header">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ </span>
+                            <span class="terminal-command typed-text" data-text="curl -fsSL https://rift.astroyds.com/rift/uninstall.sh | sh"></span>
+                        </div>
+                        <div class="terminal-output" style="display: none;">
+                            <div class="terminal-line text-secondary">→ Removing RIFT from /usr/local/bin...</div>
+                            <div class="terminal-line text-success">✓ RIFT binary removed</div>
+                            <div class="terminal-line text-secondary">→ Cleaning up configuration files...</div>
+                            <div class="terminal-line text-success">✓ Configuration cleaned</div>
+                            <div class="terminal-line text-success mt-sm">✓ RIFT has been uninstalled successfully</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-md">
+                    <button class="btn btn-secondary" data-copy="curl -fsSL https://rift.astroyds.com/rift/uninstall.sh | sh">
+                        📋 Copy Uninstall Command
+                    </button>
+                    <button class="btn btn-secondary ml-sm demo-trigger" data-demo-target="uninstall">
+                        ▶ Run Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Troubleshooting</h2>
+                <p class="text-secondary reveal">Solutions to common installation issues</p>
+            </div>
+
+            <div class="grid grid-2 gap-lg">
+                <div class="card reveal">
+                    <h3 class="mb-md">🔒 Permission Denied</h3>
+                    <p class="text-secondary mb-md">
+                        If you see "Permission denied" during installation:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Run with sudo (may require password)</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | sudo sh
+
+<span class="comment"># Or install to user directory (no sudo needed)</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | sh -s -- --prefix=$HOME/.local</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sudo sh">
+                        📋 Copy Sudo Install
+                    </button>
+                </div>
+
+                <div class="card reveal">
+                    <h3 class="mb-md">🛤️ Command Not Found</h3>
+                    <p class="text-secondary mb-md">
+                        If <code>rift</code> command is not found after installation:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Add RIFT to your PATH (bash/zsh)</span>
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+<span class="comment"># For fish shell</span>
+set -Ua fish_user_paths /usr/local/bin
+
+<span class="comment"># Then verify</span>
+rift --version</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy='echo &#39;export PATH="/usr/local/bin:$PATH"&#39; >> ~/.bashrc && source ~/.bashrc'>
+                        📋 Copy PATH Fix
+                    </button>
+                </div>
+
+                <div class="card reveal">
+                    <h3 class="mb-md">🌐 Network Issues</h3>
+                    <p class="text-secondary mb-md">
+                        If download fails or times out:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Try with explicit timeout and retry</span>
+curl --retry 3 --retry-delay 5 -fsSL \
+  https://rift.astroyds.com/rift/install.sh | sh
+
+<span class="comment"># Or download and inspect first</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh > install.sh
+cat install.sh  <span class="comment"># review the script</span>
+sh install.sh</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="curl --retry 3 --retry-delay 5 -fsSL https://rift.astroyds.com/rift/install.sh | sh">
+                        📋 Copy Retry Install
+                    </button>
+                </div>
+
+                <div class="card reveal">
+                    <h3 class="mb-md">🏗️ Architecture Issues</h3>
+                    <p class="text-secondary mb-md">
+                        If your architecture is not detected:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Check your system architecture</span>
+uname -m
+
+<span class="comment"># Supported: x86_64, arm64, aarch64</span>
+<span class="comment"># If unsupported, please file an issue:</span>
+<span class="comment"># https://github.com/FoundationINCCorporateTeam/RIFT-SITE/issues</span></code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="uname -m">
+                        📋 Copy Check Command
+                    </button>
+                </div>
+            </div>
+
+            <div class="card mt-xl reveal text-center">
+                <h3 class="mb-md">Still Having Issues?</h3>
+                <p class="text-secondary mb-lg">
+                    Our community is here to help. Get support through our GitHub discussions or community channels.
+                </p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE/issues" class="btn btn-primary" target="_blank">
+                        Report an Issue
+                    </a>
+                    <a href="/community.html" class="btn btn-secondary">
+                        Join Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Installation Options -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Advanced Installation</h2>
+                <p class="text-secondary reveal">Additional options for power users</p>
+            </div>
+
+            <div class="grid grid-2 gap-lg">
+                <div class="card reveal-left">
+                    <h3 class="mb-md">📦 Custom Install Location</h3>
+                    <p class="text-secondary mb-md">
+                        Install RIFT to a custom directory:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Install to custom prefix</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | \
+  sh -s -- --prefix=$HOME/.local
+
+<span class="comment"># Or any custom path</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | \
+  sh -s -- --prefix=/opt/rift</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh -s -- --prefix=$HOME/.local">
+                        📋 Copy Custom Install
+                    </button>
+                </div>
+
+                <div class="card reveal-right">
+                    <h3 class="mb-md">🔧 Offline Installation</h3>
+                    <p class="text-secondary mb-md">
+                        Install without internet during execution:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Download installer script</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh \
+  -o rift-install.sh
+
+<span class="comment"># Review and run offline</span>
+chmod +x rift-install.sh
+./rift-install.sh</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh -o rift-install.sh && chmod +x rift-install.sh">
+                        📋 Copy Offline Download
+                    </button>
+                </div>
+
+                <div class="card reveal">
+                    <h3 class="mb-md">🔄 Version Management</h3>
+                    <p class="text-secondary mb-md">
+                        Install specific versions or manage multiple installations:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Install specific version (future feature)</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | \
+  sh -s -- --version=1.0.0
+
+<span class="comment"># Check for updates</span>
+rift --check-update
+
+<span class="comment"># View installed version</span>
+rift --version</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="rift --version">
+                        📋 Copy Version Check
+                    </button>
+                </div>
+
+                <div class="card reveal">
+                    <h3 class="mb-md">🏢 Enterprise Deployment</h3>
+                    <p class="text-secondary mb-md">
+                        Automated deployment for teams:
+                    </p>
+                    <div class="terminal mb-md">
+                        <div class="terminal-body">
+                            <pre class="code-highlight"><code><span class="comment"># Silent installation (no prompts)</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | \
+  sh -s -- --silent
+
+<span class="comment"># With verification</span>
+curl -fsSL https://rift.astroyds.com/rift/install.sh | \
+  sh && rift --version</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh -s -- --silent">
+                        📋 Copy Silent Install
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Next Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">What's Next?</h2>
+                <p class="text-secondary reveal">Continue your RIFT journey</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card reveal">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Learn the Basics</h3>
+                    <p class="feature-description">
+                        Start with our comprehensive documentation covering syntax, concepts, and best practices.
+                    </p>
+                    <a href="/docs-lite.html" class="btn btn-sm btn-secondary mt-md">View Documentation →</a>
+                </div>
+
+                <div class="card reveal">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Build Something</h3>
+                    <p class="feature-description">
+                        Explore real-world examples and showcase projects to see RIFT in action.
+                    </p>
+                    <a href="/showcase.html" class="btn btn-sm btn-secondary mt-md">View Showcase →</a>
+                </div>
+
+                <div class="card reveal">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">Join the Community</h3>
+                    <p class="feature-description">
+                        Connect with other RIFT developers, share your projects, and get help when needed.
+                    </p>
+                    <a href="/community.html" class="btn btn-sm btn-secondary mt-md">Join Community →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-section-title">Learn</div>
+                    <ul class="footer-links">
+                        <li><a href="/docs-lite.html">Documentation</a></li>
+                        <li><a href="/why-rift.html">Why RIFT</a></li>
+                        <li><a href="/compare.html">Comparisons</a></li>
+                        <li><a href="/performance.html">Performance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-section-title">Resources</div>
+                    <ul class="footer-links">
+                        <li><a href="/install.html">Installation</a></li>
+                        <li><a href="/showcase.html">Showcase</a></li>
+                        <li><a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-section-title">Community</div>
+                    <ul class="footer-links">
+                        <li><a href="/community.html">Get Involved</a></li>
+                        <li><a href="/community.html#governance">Governance</a></li>
+                        <li><a href="/community.html#conduct">Code of Conduct</a></li>
+                        <li><a href="/community.html#contribute">Contributing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-section-title">Quick Install</div>
+                    <div class="terminal" style="margin-top: 1rem; font-size: 0.75rem;">
+                        <div class="terminal-body" style="padding: 0.75rem;">
+                            <code style="color: var(--terminal-text); background: transparent;">curl -fsSL https://rift.astroyds.com/rift/install.sh | sh</code>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary mt-sm" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh" style="font-size: 0.75rem;">Copy</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 RIFT Programming Language. Released under MIT License.</p>
+                <p class="mt-sm text-xs">RIFT (Rapid Integrated Framework Technology)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/data.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        // Terminal Animation Scripts
+        document.addEventListener('DOMContentLoaded', () => {
+            // Typing effect function
+            function typeText(element, text, speed = 50) {
+                return new Promise((resolve) => {
+                    let i = 0;
+                    element.textContent = '';
+                    const timer = setInterval(() => {
+                        if (i < text.length) {
+                            element.textContent += text.charAt(i);
+                            i++;
+                        } else {
+                            clearInterval(timer);
+                            resolve();
+                        }
+                    }, speed);
+                });
+            }
+
+            // Install demo animations
+            document.querySelectorAll('[data-install-demo]').forEach(terminal => {
+                terminal.addEventListener('click', async function() {
+                    const commandElement = this.querySelector('.typed-text');
+                    const outputElement = this.querySelector('.terminal-output');
+                    const text = commandElement.dataset.text;
+                    
+                    // Reset
+                    commandElement.textContent = '';
+                    outputElement.style.display = 'none';
+                    
+                    // Type command
+                    await typeText(commandElement, text, 40);
+                    
+                    // Show output after delay
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    outputElement.style.display = 'block';
+                });
+            });
+
+            // Verification demos
+            document.querySelectorAll('[data-verification-demo]').forEach(terminal => {
+                terminal.addEventListener('click', async function() {
+                    const demoType = this.dataset.verificationDemo;
+                    const commandElement = this.querySelector('.typed-text');
+                    const text = commandElement.dataset.text;
+                    
+                    // Reset
+                    commandElement.textContent = '';
+                    const outputs = this.querySelectorAll('.terminal-output');
+                    outputs.forEach(output => output.style.display = 'none');
+                    
+                    // Type command
+                    await typeText(commandElement, text, 40);
+                    
+                    if (demoType === 'version') {
+                        // Show version output
+                        await new Promise(resolve => setTimeout(resolve, 300));
+                        outputs[0].style.display = 'block';
+                    } else if (demoType === 'hello') {
+                        // Show multi-step execution
+                        await new Promise(resolve => setTimeout(resolve, 300));
+                        const step1 = this.querySelector('.step-1');
+                        step1.style.display = 'block';
+                        
+                        const step1Command = step1.querySelector('.typed-text');
+                        await typeText(step1Command, step1Command.dataset.text, 40);
+                        
+                        await new Promise(resolve => setTimeout(resolve, 300));
+                        this.querySelector('.step-2').style.display = 'block';
+                    }
+                });
+            });
+
+            // Uninstall demo
+            document.querySelector('[data-uninstall-demo]')?.addEventListener('click', async function() {
+                const commandElement = this.querySelector('.typed-text');
+                const outputElement = this.querySelector('.terminal-output');
+                const text = commandElement.dataset.text;
+                
+                // Reset
+                commandElement.textContent = '';
+                outputElement.style.display = 'none';
+                
+                // Type command
+                await typeText(commandElement, text, 40);
+                
+                // Show output after delay
+                await new Promise(resolve => setTimeout(resolve, 500));
+                outputElement.style.display = 'block';
+            });
+
+            // Demo trigger buttons
+            document.querySelectorAll('.demo-trigger').forEach(button => {
+                button.addEventListener('click', function() {
+                    const target = this.dataset.demoTarget;
+                    let terminal;
+                    
+                    if (target === 'macos' || target === 'linux' || target === 'wsl') {
+                        terminal = document.querySelector(`[data-install-demo="${target}"]`);
+                    } else if (target === 'version' || target === 'hello') {
+                        terminal = document.querySelector(`[data-verification-demo="${target}"]`);
+                    } else if (target === 'uninstall') {
+                        terminal = document.querySelector('[data-uninstall-demo]');
+                    }
+                    
+                    if (terminal) {
+                        terminal.dispatchEvent(new Event('click'));
+                    }
+                });
+            });
+
+            // Auto-run first demo on page load
+            setTimeout(() => {
+                const firstDemo = document.querySelector('[data-install-demo="macos"]');
+                if (firstDemo) {
+                    firstDemo.click();
+                }
+            }, 500);
+        });
+    </script>
+</body>
+</html>
