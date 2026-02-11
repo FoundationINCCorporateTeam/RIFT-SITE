@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the RIFT community - Contribute to development, governance, and help shape the future of expressive programming.">
+    <meta name="keywords" content="RIFT, community, contribute, governance, open source, code of conduct">
+    <title>Community - RIFT Programming Language</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/" class="logo">RIFT</a>
+            
+            <nav class="nav-main">
+                <a href="/why-rift.html">Why RIFT</a>
+                <a href="/docs-lite.html">Docs</a>
+                <a href="/compare.html">Compare</a>
+                <a href="/install.html">Install</a>
+                <a href="/showcase.html">Showcase</a>
+                <a href="/community.html" class="active">Community</a>
+                <a href="/performance.html">Performance</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <a href="/install.html" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-hero" style="padding: 4rem 0 2rem 0;">
+        <div class="container" style="max-width: 800px;">
+            <div class="hero text-center">
+                <h1 class="hero-title reveal" style="font-size: 2.5rem; margin-bottom: 1.5rem;">RIFT Community</h1>
+                <p class="hero-subtitle reveal" style="font-size: 1.1rem; line-height: 1.7; max-width: 700px; margin: 0 auto;">
+                    Join a transparent, community-driven project built on clear governance, 
+                    open contribution, and shared technical excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Getting Started as a Contributor</h2>
+                <p class="text-secondary reveal">Your first steps in contributing to RIFT</p>
+            </div>
+
+            <div class="grid grid-2 gap-xl">
+                <div class="card reveal-left">
+                    <h3 class="mb-md">1. Set Up Your Environment</h3>
+                    <ul class="text-secondary" style="line-height: 1.8;">
+                        <li>Fork the <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE" class="link">RIFT repository</a></li>
+                        <li>Clone your fork locally</li>
+                        <li>Install development dependencies</li>
+                        <li>Run the test suite to verify setup</li>
+                    </ul>
+                    <div class="mt-md">
+                        <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE" class="btn btn-sm btn-secondary">View Repository</a>
+                    </div>
+                </div>
+
+                <div class="card reveal-right">
+                    <h3 class="mb-md">2. Find Your First Issue</h3>
+                    <ul class="text-secondary" style="line-height: 1.8;">
+                        <li>Check issues labeled <code>good-first-issue</code></li>
+                        <li>Review documentation for needed updates</li>
+                        <li>Explore <code>help-wanted</code> labels</li>
+                        <li>Ask questions in GitHub Discussions</li>
+                    </ul>
+                    <div class="mt-md">
+                        <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE/issues" class="btn btn-sm btn-secondary">Browse Issues</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-xl reveal">
+                <h3 class="mb-md">3. Contribution Workflow</h3>
+                <div class="grid grid-2 gap-lg">
+                    <div>
+                        <h4 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Before Starting</h4>
+                        <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                            <li>Comment on the issue to claim it</li>
+                            <li>Discuss your approach if unclear</li>
+                            <li>Review relevant documentation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Submitting Changes</h4>
+                        <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                            <li>Create a descriptive branch name</li>
+                            <li>Write clear commit messages</li>
+                            <li>Include tests for new features</li>
+                            <li>Submit PR with detailed description</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribution Areas Section -->
+    <section id="contribute">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">How to Contribute</h2>
+                <p class="text-secondary reveal">Multiple paths to meaningful contribution</p>
+            </div>
+
+            <div class="grid grid-3 gap-lg">
+                <div class="card reveal-left">
+                    <h3 class="mb-md">Code</h3>
+                    <p class="text-secondary mb-md" style="line-height: 1.7;">
+                        Implement features, fix bugs, optimize performance, and improve the core language.
+                    </p>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li>Language implementation</li>
+                        <li>Standard library modules</li>
+                        <li>Compiler optimizations</li>
+                        <li>Bug fixes and patches</li>
+                    </ul>
+                    <div class="mt-md">
+                        <span class="badge">Rust</span>
+                        <span class="badge">C++</span>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <h3 class="mb-md">Documentation</h3>
+                    <p class="text-secondary mb-md" style="line-height: 1.7;">
+                        Write guides, tutorials, and API documentation to help others learn RIFT.
+                    </p>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li>Language reference docs</li>
+                        <li>Tutorial content</li>
+                        <li>Code examples</li>
+                        <li>Translation efforts</li>
+                    </ul>
+                    <div class="mt-md">
+                        <span class="badge">Writing</span>
+                        <span class="badge">Technical</span>
+                    </div>
+                </div>
+
+                <div class="card reveal-right">
+                    <h3 class="mb-md">Testing</h3>
+                    <p class="text-secondary mb-md" style="line-height: 1.7;">
+                        Build test coverage, report bugs, and verify fixes across platforms.
+                    </p>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li>Unit test development</li>
+                        <li>Integration testing</li>
+                        <li>Bug reporting</li>
+                        <li>Platform verification</li>
+                    </ul>
+                    <div class="mt-md">
+                        <span class="badge">QA</span>
+                        <span class="badge">Debugging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governance">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Governance Model</h2>
+                <p class="text-secondary reveal">Transparent decision-making and clear leadership structure</p>
+            </div>
+
+            <div class="card reveal mb-xl">
+                <h3 class="mb-md">Core Team Structure</h3>
+                <div class="grid grid-2 gap-lg">
+                    <div>
+                        <h4 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Core Maintainers</h4>
+                        <p class="text-secondary text-sm mb-md" style="line-height: 1.7;">
+                            Responsible for language direction, breaking changes, and long-term architecture decisions.
+                        </p>
+                        <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                            <li>Final approval on RFCs</li>
+                            <li>Release coordination</li>
+                            <li>Governance process</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Area Maintainers</h4>
+                        <p class="text-secondary text-sm mb-md" style="line-height: 1.7;">
+                            Domain experts who review and approve changes in specific subsystems.
+                        </p>
+                        <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                            <li>Compiler & runtime</li>
+                            <li>Standard library</li>
+                            <li>Documentation & website</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card reveal mb-xl">
+                <h3 class="mb-md">Decision-Making Process</h3>
+                <div class="terminal" style="background: var(--color-bg-secondary); border: 1px solid var(--color-border);">
+                    <div class="terminal-body" style="padding: 1.5rem;">
+                        <div style="margin-bottom: 1rem;">
+                            <div style="color: var(--color-accent); font-weight: 600; margin-bottom: 0.5rem;">Minor Changes</div>
+                            <div style="color: var(--color-text-secondary); line-height: 1.6; font-size: 0.9rem;">
+                                Bug fixes, documentation updates, small features → Standard PR review process
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <div style="color: var(--color-accent); font-weight: 600; margin-bottom: 0.5rem;">Moderate Changes</div>
+                            <div style="color: var(--color-text-secondary); line-height: 1.6; font-size: 0.9rem;">
+                                New standard library modules, significant optimizations → Area maintainer approval
+                            </div>
+                        </div>
+                        <div>
+                            <div style="color: var(--color-accent); font-weight: 600; margin-bottom: 0.5rem;">Major Changes</div>
+                            <div style="color: var(--color-text-secondary); line-height: 1.6; font-size: 0.9rem;">
+                                Language features, breaking changes, architectural shifts → RFC process + core team approval
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <h3 class="mb-md">RFC (Request for Comments) Process</h3>
+                <p class="text-secondary mb-md" style="line-height: 1.7;">
+                    For substantial changes, we use a formal RFC process to ensure community input and thorough design review.
+                </p>
+                <ol class="text-secondary" style="line-height: 1.8;">
+                    <li><strong>Proposal:</strong> Submit RFC document via GitHub PR</li>
+                    <li><strong>Discussion:</strong> Community feedback period (minimum 2 weeks)</li>
+                    <li><strong>Refinement:</strong> Author addresses feedback and updates proposal</li>
+                    <li><strong>Decision:</strong> Core team votes to accept, reject, or defer</li>
+                    <li><strong>Implementation:</strong> If accepted, implementation PRs can proceed</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Development Roadmap</h2>
+                <p class="text-secondary reveal">Clear timeline and realistic feature planning</p>
+            </div>
+
+            <div class="grid grid-3 gap-lg">
+                <div class="card reveal-left">
+                    <div class="mb-md">
+                        <span class="badge" style="background: var(--color-success); color: white;">Current</span>
+                        <h3 class="mt-sm">v1.0</h3>
+                        <p class="text-secondary text-sm">Released Q1 2026</p>
+                    </div>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li>✓ Core language specification</li>
+                        <li>✓ Basic compiler implementation</li>
+                        <li>✓ Standard library (HTTP, DB, FS)</li>
+                        <li>✓ Pattern matching</li>
+                        <li>✓ Async/await support</li>
+                        <li>✓ Basic error handling</li>
+                    </ul>
+                </div>
+
+                <div class="card reveal">
+                    <div class="mb-md">
+                        <span class="badge" style="background: var(--color-info); color: white;">Planned</span>
+                        <h3 class="mt-sm">v1.x Series</h3>
+                        <p class="text-secondary text-sm">Q2-Q4 2026</p>
+                    </div>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li>→ Package manager & registry</li>
+                        <li>→ Built-in testing framework</li>
+                        <li>→ Language Server Protocol</li>
+                        <li>→ Improved error messages</li>
+                        <li>→ Performance optimizations</li>
+                        <li>→ Cross-compilation support</li>
+                    </ul>
+                </div>
+
+                <div class="card reveal-right">
+                    <div class="mb-md">
+                        <span class="badge" style="background: var(--color-warning); color: white;">Future</span>
+                        <h3 class="mt-sm">v2.0</h3>
+                        <p class="text-secondary text-sm">2027+</p>
+                    </div>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li>→ Advanced type inference</li>
+                        <li>→ Macro system</li>
+                        <li>→ WebAssembly target</li>
+                        <li>→ Generics refinement</li>
+                        <li>→ Foreign function interface</li>
+                        <li>→ Reflection capabilities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mt-xl reveal" style="background: var(--color-bg-secondary); border: 2px solid var(--color-border);">
+                <h4 class="mb-md">Release Philosophy</h4>
+                <div class="grid grid-2 gap-lg">
+                    <div>
+                        <h5 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Semantic Versioning</h5>
+                        <p class="text-secondary text-sm" style="line-height: 1.7;">
+                            We follow strict semver. Minor versions maintain backward compatibility. 
+                            Breaking changes only in major versions with clear migration paths.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Stability Guarantees</h5>
+                        <p class="text-secondary text-sm" style="line-height: 1.7;">
+                            v1.x series commits to language stability. New features are additive. 
+                            Deprecations announced one minor version in advance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code of Conduct Section -->
+    <section id="conduct">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Code of Conduct</h2>
+                <p class="text-secondary reveal">Our commitment to an inclusive and respectful community</p>
+            </div>
+
+            <div class="card reveal mb-xl">
+                <h3 class="mb-md">Core Principles</h3>
+                <div class="grid grid-2 gap-lg">
+                    <div>
+                        <h4 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Respect & Professionalism</h4>
+                        <p class="text-secondary text-sm" style="line-height: 1.7;">
+                            Treat all community members with respect. Focus on technical merit. 
+                            Disagreements are natural; approach them constructively and professionally.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold mb-sm" style="color: var(--color-text);">Inclusive Environment</h4>
+                        <p class="text-secondary text-sm" style="line-height: 1.7;">
+                            Welcome contributors of all backgrounds and experience levels. 
+                            Provide constructive feedback. Help others learn and grow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card reveal mb-xl">
+                <h3 class="mb-md">Expected Behavior</h3>
+                <ul class="text-secondary" style="line-height: 1.8;">
+                    <li><strong>Assume good intent:</strong> Presume positive intentions unless proven otherwise</li>
+                    <li><strong>Be clear and constructive:</strong> Provide specific, actionable feedback on technical matters</li>
+                    <li><strong>Accept responsibility:</strong> Own your mistakes and learn from them</li>
+                    <li><strong>Focus on the work:</strong> Critique ideas and code, not people</li>
+                    <li><strong>Support newcomers:</strong> Remember that everyone started somewhere</li>
+                </ul>
+            </div>
+
+            <div class="card reveal mb-xl">
+                <h3 class="mb-md">Unacceptable Behavior</h3>
+                <ul class="text-secondary" style="line-height: 1.8;">
+                    <li>Harassment, discrimination, or exclusionary behavior</li>
+                    <li>Personal attacks, insults, or inflammatory comments</li>
+                    <li>Trolling, intentional disruption, or sustained off-topic discussion</li>
+                    <li>Publishing others' private information without consent</li>
+                    <li>Other conduct that undermines a professional environment</li>
+                </ul>
+            </div>
+
+            <div class="card reveal" style="background: var(--color-bg-secondary); border: 2px solid var(--color-border);">
+                <h3 class="mb-md">Enforcement</h3>
+                <p class="text-secondary mb-md" style="line-height: 1.7;">
+                    Core maintainers are responsible for enforcing this code of conduct. 
+                    Violations should be reported via GitHub or direct contact with maintainers.
+                </p>
+                <p class="text-secondary" style="line-height: 1.7;">
+                    <strong>Consequences:</strong> Depending on severity, actions may include warnings, 
+                    temporary bans, or permanent removal from the project. All enforcement actions 
+                    are documented and reviewable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communication Channels Section -->
+    <section id="channels">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-xl">
+                <h2 class="reveal">Communication Channels</h2>
+                <p class="text-secondary reveal">Where to engage with the RIFT community</p>
+            </div>
+
+            <div class="grid grid-2 gap-lg">
+                <div class="card reveal-left">
+                    <h3 class="mb-md">GitHub</h3>
+                    <p class="text-secondary mb-md" style="line-height: 1.7;">
+                        Primary platform for all project activity, development, and coordination.
+                    </p>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li><strong>Issues:</strong> Bug reports, feature requests</li>
+                        <li><strong>Pull Requests:</strong> Code contributions</li>
+                        <li><strong>Discussions:</strong> Questions, ideas, RFCs</li>
+                        <li><strong>Wiki:</strong> Developer guides</li>
+                    </ul>
+                    <div class="mt-md">
+                        <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE" class="btn btn-sm btn-primary">Visit GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card reveal-right">
+                    <h3 class="mb-md">Documentation</h3>
+                    <p class="text-secondary mb-md" style="line-height: 1.7;">
+                        Comprehensive guides, references, and learning resources.
+                    </p>
+                    <ul class="text-secondary text-sm" style="line-height: 1.7;">
+                        <li><strong>Language Docs:</strong> Syntax and semantics</li>
+                        <li><strong>API Reference:</strong> Standard library</li>
+                        <li><strong>Guides:</strong> Best practices and patterns</li>
+                        <li><strong>Examples:</strong> Real-world code samples</li>
+                    </ul>
+                    <div class="mt-md">
+                        <a href="/docs-lite.html" class="btn btn-sm btn-secondary">Read Docs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-xl reveal" style="background: var(--color-bg-secondary); border: 2px solid var(--color-border);">
+                <h4 class="mb-md">Communication Guidelines</h4>
+                <div class="grid grid-2 gap-lg">
+                    <div>
+                        <h5 class="text-sm font-bold mb-sm" style="color: var(--color-text);">For Questions</h5>
+                        <p class="text-secondary text-sm" style="line-height: 1.7;">
+                            Use GitHub Discussions for general questions and open-ended conversations. 
+                            Search existing threads first to avoid duplicates.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-bold mb-sm" style="color: var(--color-text);">For Issues</h5>
+                        <p class="text-secondary text-sm" style="line-height: 1.7;">
+                            Open GitHub Issues for concrete bugs or specific feature proposals. 
+                            Include reproduction steps, environment details, and expected vs actual behavior.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section>
+        <div class="container">
+            <div class="card text-center p-xl reveal" style="background: linear-gradient(135deg, var(--color-bg-secondary), var(--color-bg-tertiary)); border: 2px solid var(--color-border);">
+                <h2 class="mb-md">Ready to Contribute?</h2>
+                <p class="text-secondary mb-xl" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Join a community committed to building expressive, minimal, and powerful programming tools. 
+                    Every contribution—code, documentation, testing, or feedback—helps shape RIFT's future.
+                </p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE" class="btn btn-primary btn-lg">View on GitHub</a>
+                    <a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE/issues" class="btn btn-secondary btn-lg">Browse Issues</a>
+                    <a href="/docs-lite.html" class="btn btn-outline btn-lg">Read Documentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-section-title">Learn</div>
+                    <ul class="footer-links">
+                        <li><a href="/docs-lite.html">Documentation</a></li>
+                        <li><a href="/why-rift.html">Why RIFT</a></li>
+                        <li><a href="/compare.html">Comparisons</a></li>
+                        <li><a href="/performance.html">Performance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-section-title">Resources</div>
+                    <ul class="footer-links">
+                        <li><a href="/install.html">Installation</a></li>
+                        <li><a href="/showcase.html">Showcase</a></li>
+                        <li><a href="https://github.com/FoundationINCCorporateTeam/RIFT-SITE">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-section-title">Community</div>
+                    <ul class="footer-links">
+                        <li><a href="/community.html">Get Involved</a></li>
+                        <li><a href="/community.html#governance">Governance</a></li>
+                        <li><a href="/community.html#conduct">Code of Conduct</a></li>
+                        <li><a href="/community.html#contribute">Contributing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-section-title">Quick Install</div>
+                    <div class="terminal" style="margin-top: 1rem; font-size: 0.75rem;">
+                        <div class="terminal-body" style="padding: 0.75rem;">
+                            <code style="color: var(--terminal-text); background: transparent;">curl -fsSL https://rift.astroyds.com/rift/install.sh | sh</code>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary mt-sm" data-copy="curl -fsSL https://rift.astroyds.com/rift/install.sh | sh" style="font-size: 0.75rem;">Copy</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 RIFT Programming Language. Released under MIT License.</p>
+                <p class="mt-sm text-xs">RIFT (Rapid Integrated Framework Technology)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/data.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
