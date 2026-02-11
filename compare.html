@@ -594,9 +594,15 @@
                     <div class="code-body">
                         <div style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
                             ${taskName}
-                            <span style="color: var(--color-success); margin-left: 0.5rem;">
-                                ↓${charReduction > 0 ? charReduction : 0}% chars, ↓${lineReduction > 0 ? lineReduction : 0}% lines vs RIFT
-                            </span>
+                            ${charReduction > 0 ? `
+                                <span style="color: var(--color-success); margin-left: 0.5rem;">
+                                    ↓${charReduction}% chars, ↓${lineReduction}% lines with RIFT
+                                </span>
+                            ` : charReduction < 0 ? `
+                                <span style="color: var(--color-warning); margin-left: 0.5rem;">
+                                    ↑${Math.abs(charReduction)}% chars, ↑${Math.abs(lineReduction)}% lines with RIFT
+                                </span>
+                            ` : ''}
                         </div>
                         <div class="code-block">${this.highlightCode(other.code, other.language)}</div>
                     </div>

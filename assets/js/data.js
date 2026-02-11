@@ -430,7 +430,7 @@ print(doubled)`,
 
 let conn = db.sql("sqlite:///app.db")
 let users = conn.table("users")
-    -> where("age", "!=", 18)
+    -> where("age", ">=", 18)
     -> order("name", "ASC")
     -> get()
 
